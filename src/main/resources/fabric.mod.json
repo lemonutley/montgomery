@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "montgomery",
+	"version": "${version}",
+	"name": "Montgomery",
+	"description": "we love lucy maud montgomery",
+	"authors": [
+		"lemonutley"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/montgomery/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lemonutley.montgomery.Montgomery"
+		],
+		"fabric-datagen": [
+			"com.lemonutley.montgomery.MontgomeryDataGenerator"
+		],
+		"client": [
+			"com.lemonutley.montgomery.MontogomeryClient"
+		]
+	},
+	"mixins": [
+		"montgomery.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
